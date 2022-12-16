@@ -3,6 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        jcenter() //add jcenter
     }
 }
 dependencyResolutionManagement {
@@ -10,7 +11,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        jcenter() //add jcenter
     }
 }
-rootProject.name = "QR_Code_Event_Registration"
+rootProject.name = "DtuEvent"
 include ':app'

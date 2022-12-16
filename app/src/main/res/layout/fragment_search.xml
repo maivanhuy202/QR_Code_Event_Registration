@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:gravity="center"
+        android:iconifiedByDefault="false">
+
+<!--        <requestFocus />-->
+    </SearchView>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_below="@+id/search"
+        android:id="@+id/pgb_loading"
+        android:layout_gravity="center|top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Student"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:text="Id: "
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_st_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="25211203338" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text="Name: "
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_st_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp"
+                    android:text="Lý Thành Long" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="6dp"
+                    android:text="Info: "
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_st_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="2dp"
+                    android:text="K25 - CMU - TPM1 - Information Technology" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_attend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_attend"
+                android:text="Attend"
+                android:textColor="@color/white" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_not_fond"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginHorizontal="16dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:text="Not Found"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"-->
+<!--                android:textSize="32dp" />-->
+        </LinearLayout>
+
+<!--                <TextView-->
+<!--            android:id="@+id/tv_st_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="16dp"-->
+<!--            android:text="Ten Sinh Vien"-->
+<!--            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"-->
+<!--            android:textSize="22dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_st_code"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tv_st_name"-->
+<!--            android:layout_marginHorizontal="16dp"-->
+<!--            android:text="1234567890"-->
+<!--            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"-->
+<!--            android:textSize="18dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_st_info"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tv_st_code"-->
+<!--            android:layout_marginHorizontal="16dp"-->
+<!--            android:text="k25 - CMU TPM3"-->
+<!--            android:textAppearance="@style/TextAppearance.Material3.BodySmall"-->
+<!--            android:textSize="14dp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_attend"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text="Attend" />-->
+    </RelativeLayout>
+
+
+
+        <TextView
+        android:id="@+id/tv_not_fond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Not Found"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textSize="32dp" />
+
+
+</RelativeLayout>
